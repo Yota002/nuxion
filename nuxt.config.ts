@@ -2,6 +2,7 @@
 export default defineNuxtConfig({
   app: {
     head: {
+      title: "Nuxion",
       link: [
         {
           rel: "stylesheet",
@@ -16,6 +17,7 @@ export default defineNuxtConfig({
     },
   },
   routeRules: {
+    "/": { redirect: "/notes" },
     "/notes/**": { ssr: false },
   },
   devtools: {
